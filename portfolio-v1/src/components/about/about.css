@@ -1,0 +1,111 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10%;
+}
+
+.about-me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about-me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about-me-image:hover {
+    transform: rotate(0deg);
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about-card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-card:hover {
+    border: 1px solid var(--color-primary-variant);
+    background: transparent;
+    color: var(--color-primary);
+    cursor: default;
+}
+
+.about-card h5 {
+    font-size: .9rem;
+}
+
+.about-icon {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about-card small {
+    font-size: .8rem;
+    color: var(--color-light);
+}
+
+.about-content p {
+    /* font-size: .8rem; */
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+/* ---------- Media Queries (Medium Devices) ---------- */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about-me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about-content p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+/* ---------- Media Queries (Small Devices) ---------- */
+@media screen and (max-width: 600px) {
+    .about-me {
+        width: 70%;
+        margin: 0 auto 3rem;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .about-card {
+        padding: 2rem;
+    }
+
+    .about-content p {
+        margin: 1rem 0 1.5rem;
+        font-size: .9rem;
+    }
+
+    .about-container a {
+        margin: 0 auto;
+        padding: .5rem 1rem;
+    }
+}
