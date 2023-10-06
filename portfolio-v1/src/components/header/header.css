@@ -67,9 +67,6 @@
         height: 70vh;
     }
 
-    .cta {
-        font-size: 0.75rem;
-    }
 }
 
 /* ---------- Media Queries (Small Devices) ---------- */
@@ -88,12 +85,5 @@
         position: relative;
         width: 80%;
     }
-
-    .cta {
-        /* font-size: 0.6rem; */
-        padding: 1px 0;
-        font-size: 1rem;
-    }
-
 
 }

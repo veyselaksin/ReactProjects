@@ -2,7 +2,7 @@ import './app.css'
 import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
-import Experience from './components/experience/Experience'
+import Experience from './components/experience'
 import Services from './components/services/Services'
 import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
@@ -15,7 +15,7 @@ export function App() {
             <Header />
             <Nav />
             <About />
-            <Experience />
+            {/* <Experience /> */}
             <Services />
             <Portfolio />
             <Testimonials />
