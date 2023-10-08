@@ -10,7 +10,7 @@ function Experience() {
             <h2>My Experience</h2>
             <div className='container experience-cards'>
                 <div className='experience-card'>
-                    <h2>Frontend Development</h2>
+                    <h3>Frontend Development</h3>
                     <ul className='skill-list'>
                         {FRONTEND_EXPERIENCE_SKILLS.map((skill, index) => (
                             <li key={index}>
@@ -24,7 +24,7 @@ function Experience() {
                     </ul>
                 </div>
                 <div className='experience-card'>
-                    <h2>Backend Development</h2>
+                    <h3>Backend Development</h3>
                     <ul className='skill-list'>
                         {BACKEND_EXPERIENCE_SKILLS.map((skill, index) => (
                             <li key={index}>

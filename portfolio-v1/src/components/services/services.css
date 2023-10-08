@@ -1,0 +1,63 @@
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.service {
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    height: fit-content;
+    border: 1px solid var(--color-primary-variant);
+}
+
+.service-head {
+    background: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.service-head h3 {
+    color: var(--color-bg);
+}
+
+.service-list {
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.service-list li {
+    color: var(--color-light);
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.service-list li::before {
+    content: '✔';
+    color: var(--color-primary);
+    margin-right: 0.5rem;
+}
+
+.service:hover {
+    border: 1px solid var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+    cursor: default;
+}
+
+/* ---------- Media Queries (Medium Devices) ---------- */
+@media screen and (max-width: 1024px) {
+    .service-container {
+        grid-template-columns: 1fr;
+        gap: 2;
+    }
+}
+
+/* ---------- Media Queries (Small Devices) ---------- */
+@media screen and (max-width: 600px) {}
